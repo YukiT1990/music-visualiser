@@ -38,8 +38,8 @@ function Needles() {
 
 				//calculate the size of the plots
                 var margin = 100;
-                wid = width - margin / 2;
-                hei = height - margin / 2;
+                wid = width - margin / this.plotsAcross;
+                hei = height - margin / this.plotsDown;
 				var x = (margin + j * wid) / this.plotsAcross;
 				var y = (margin + i * hei) / this.plotsDown;
 				var w = (wid - margin) / this.plotsAcross;

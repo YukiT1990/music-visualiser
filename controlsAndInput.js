@@ -9,7 +9,6 @@ function ControlsAndInput(){
 
 	//make the window fullscreen or revert to windowed
 	this.mousePressed = function(){
-		//???
 		//check if the playback button has been clicked
         if(this.playbackButton.hitCheck() == true){
             // play or pause music
@@ -57,9 +56,6 @@ function ControlsAndInput(){
 
 	this.menu = function(){
 		//draw out menu items for each visualisation
-		//???
-
-        
         for(var i = 0; i < vis.visuals.length; i++) {
             var num = i + 1;
             text(num.toString() + ": " + vis.visuals[i].name, 100, 30 + 40 * num);
